@@ -26,7 +26,7 @@ const aboutContent = {
   ],
 
   image: {
-    src: "/images/about.svg",
+    src: "/about/about.svg",
     alt: "Students planning their education future"
   }
 }

@@ -18,7 +18,7 @@ const servicesContent = {
     "We provide complete guidance and support throughout your online education journey — from choosing the right course to post-degree planning.",
 
   image: {
-    src: "/images/service.svg", // replace with your image
+    src: "/services/service.svg", // replace with your image
     alt: "Online education and admission support"
   },
 
