@@ -28,24 +28,26 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 w-full transition-shadow duration-300 ${
-          scrolled
+        className={`sticky top-0 z-50 w-full transition-shadow duration-300 ${scrolled
             ? "bg-white backdrop-blur-md shadow-md"
             : "bg-gradient-to-l from-white to-purple-50"
-        }`}
+          }`}
       >
         <nav className="container mx-auto flex items-center justify-between px-4 py-4 lg:px-6">
-          
+
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex flex-row justify-center items-center gap-2">
             <Image
               src="/logo/logo1.png"
               alt="Mentozo Logo"
               width={32}
               height={32}
               priority
-              className="w-15 h-13"
+              className="w-12 h-12"
             />
+            <h3 className="text-black text-2xl">
+              <span className="font-thin italic">COMPARE</span> <br /> <strong className="font-bold">SHIKSHA</strong>
+            </h3>
           </Link>
 
           {/* Desktop Nav */}
@@ -111,9 +113,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-[72px] left-0 z-50 w-full bg-white shadow-lg transition-all duration-300 lg:hidden ${
-          menuOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
-        }`}
+        className={`fixed top-[72px] left-0 z-50 w-full bg-white shadow-lg transition-all duration-300 lg:hidden ${menuOpen ? "translate-y-0 opacity-100" : "-translate-y-10 opacity-0 pointer-events-none"
+          }`}
       >
         <ul className="flex flex-col justify-center text-center">
           {navigation.map((menu) => (

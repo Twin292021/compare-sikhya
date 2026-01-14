@@ -37,7 +37,7 @@ export default function Hero() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <span className="text-purple-600">Compare Sikhya</span>
+                            <span className="text-purple-600">Compare Shiksha</span>
                             <span className="block">
                                 Make Smarter Education Decisions
                             </span>

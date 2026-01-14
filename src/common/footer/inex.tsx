@@ -1,12 +1,12 @@
-// import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
     /* ================= FOOTER DATA ================= */
     const footerData = {
         brand: {
-            name: "COMPARE SIKHYA",
-            // logo: "/logo/logo1.svg", // update path if needed
+            name: "COMPARE SHIKSHA",
+            logo: "/logo/logo.png", // update path if needed
             description:
                 "Empowering students with expert guidance, transparent counseling, and end-to-end support to choose the right online degree programs with confidence.",
         },
@@ -19,7 +19,7 @@ export default function Footer() {
         ],
         contact: {
             location: "Noida, Delhi NCR, India",
-            email: "hr@mentozo.com",
+            email: "info@compareshiksha.com",
             phone: "+91-7011512300",
         },
         legal: [
@@ -39,15 +39,15 @@ export default function Footer() {
                     {/* Brand */}
                     <div className="flex flex-col">
                         <div className="flex flex-row items-center mb-4 justify-center md:justify-start">
-                            {/* <Image
+                            <Image
                                 src={footerData.brand.logo}
                                 alt={footerData.brand.name}
                                 width={120}
                                 height={60}
-                                className="mb-4 w-16 h-12"
-                            /> */}
-                            <h3 className="text-white text-5xl font-semibold mb-4">
-                                {footerData.brand.name}
+                                className="mb-4 w-25 h-25"
+                            />
+                            <h3 className="text-white text-5xl">
+                                <span className="font-thin italic">COMPARE</span> <br /> <strong className="font-bold">SHIKSHA</strong>
                             </h3>
 
                         </div>
@@ -103,13 +103,13 @@ export default function Footer() {
                                 </a>
                             </li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
 
                 {/* Bottom Bar */}
                 <div className="border-t border-gray-800 mt-14 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
                     <p className="text-gray-500">
-                        © {new Date().getFullYear()} Mentozo. All rights reserved.
+                        © {new Date().getFullYear()} Compare Shiksha. All rights reserved.
                     </p>
 
                     <div className="flex gap-6">
